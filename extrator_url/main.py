@@ -1,5 +1,4 @@
 url = "bytebank.com/cambio?moedaDeOrigem=dolar&moedaDeDestino=real&valor=100"
-
 url = url.strip()
 
 if url == "":
