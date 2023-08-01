@@ -5,6 +5,15 @@ class ExtratorURL:
     def __init__(self, url):
         self.url = self.sanitiza_url(url)
         self.valida_url()
+    
+    def __len__(self):
+        return len(self.url)
+    
+    def __str__(self):
+        return self.url
+    
+    def __eq__(self, otherObj):
+        return self.url == otherObj.url
 
     def sanitiza_url(self, url):
         if type(url) == str:
